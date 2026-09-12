@@ -1,0 +1,18 @@
+﻿Console.Write("Qual o seu nome: ");
+string nome = Console.ReadLine();
+Console.Write("Qual o produto que você comprou: ");
+string produto = Console.ReadLine();
+Console.Write("Qual o preço do poduto: ");
+double preco = double.Parse(Console.ReadLine());
+Console.Write("Qual a quantidade comprada: ");
+int quantidade = int.Parse(Console.ReadLine());
+double total = preco * quantidade;
+Console.WriteLine("===================");
+Console.WriteLine(" RECIBO DE COMPRA ");
+Console.WriteLine("===================");
+Console.WriteLine("Nome do Cliente: " + nome);
+Console.WriteLine("Produto Comprado: " + produto);
+Console.WriteLine("Preço do Produto: R$ {0:F2}", preco);
+Console.WriteLine("Quantidade Comprada: {0}", quantidade);
+Console.WriteLine("Total a Pagar: R$ {0:F2}", total);
+Console.WriteLine("===================");
